@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 
 const LogoBox = styled.span`
     font-weight: bold;
-    font-size: 48px;
+    font-size: 28px;
     display: inline-flex;
     align-items: center;
     height: 30px;
@@ -13,15 +13,15 @@ const LogoBox = styled.span`
     padding: 10px;
 
     &:hover img {
-        transfrom: rotate(45deg);
-    }
-    &:hover h1 {
-        color: "red";
+        transfrom: rotate(30deg);
     }
 `
 
 const logo = () => {
-    const rocketPrint = `/images/rocket${useColorModeValue("", "-dark")}.png`
+    const rocketPrint = `/images/programmer${useColorModeValue(
+        "",
+        "-dark"
+    )}.png`
 
     return (
         <Link href={"/"}>
@@ -35,7 +35,7 @@ const logo = () => {
                     />
                     <Text
                         color={useColorModeValue("gray.800", "whiteAlpha.900")}
-                        fontFamily="M PLUS Rounded 1c"
+                        fontFamily="'Spline Sans Mono'"
                         fontWeight="bold"
                         ml={3}
                     >
