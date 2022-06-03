@@ -12,9 +12,11 @@ const Page = () => {
                 Salve, sou desenvolvedor full-stack, moro no Brasil!
             </Box>
             <Box display={{ md: "flex" }}>
-                <Box flexGrow={1} as="h2" variant="page-title">
+                <Box flexGrow={1} as={"h2"} variant="page-title">
                     <Heading>Marcos Vinícius</Heading>
-                    <p>Talker | Engenheiro / Desenvolvedor </p>
+                    <p>
+                        Talker | Engenheiro / Desenvolvedor | Gamer | Cinéfilo
+                    </p>
                 </Box>
             </Box>
         </Container>

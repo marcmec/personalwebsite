@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Box, Container } from "@chakra-ui/react"
+import Navbar from "../navbar"
 const Main = ({ children, router }) => {
     return (
         <Box as="main" pb={8}>
@@ -10,6 +11,7 @@ const Main = ({ children, router }) => {
                 />
                 <title>Marcos Vinícius - HomePage</title>
             </Head>
+            <Navbar path={router.asPath} />
 
             <Container maxW="container.md" pt={14}>
                 {children}
