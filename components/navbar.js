@@ -26,7 +26,7 @@ const LinkItem = ({ href, path, children }) => {
             <Link
                 p={2}
                 bg={active ? "white" : undefined}
-                borderRadius={10}
+                borderRadius={"lg"}
                 color={active ? "#202022" : inactiveColor}
             >
                 {children}

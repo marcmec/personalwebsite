@@ -5,7 +5,8 @@ import {
     useColorModeValue,
     Link,
     Button,
-    Text
+    Text,
+    Code
 } from "@chakra-ui/react"
 import NextLink from "next/link"
 import ProfileImage from "../components/profileimage"
@@ -17,16 +18,17 @@ const Page = () => {
     return (
         <Container>
             <canvas></canvas>
-            <Box
+
+            <Code
                 borderRadius="lg"
-                bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+                bg={useColorModeValue("blackAlpha.500", "whiteAlpha.200")}
                 p={3}
                 mb={6}
                 align="center"
             >
                 &gt;_ Salve, sou desenvolvedor full-stack, resolvo problemas
                 através da tecnologia.
-            </Box>
+            </Code>
             <Box display={{ md: "flex" }}>
                 <Box flexGrow={1}>
                     <Heading as={"h2"} variant="page-title">
