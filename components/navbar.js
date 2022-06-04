@@ -74,9 +74,9 @@ const Navbar = props => {
                         Sociais
                     </LinkItem>
                 </Stack>
-                <Box flex={1} align="right">
-                    <ThemeToggle />
+                <ThemeToggle />
 
+                <Box flex={1} align="right">
                     <Box ml={2} display={{ base: "inline-block", md: "none" }}>
                         <Menu>
                             <MenuButton
