@@ -4,6 +4,7 @@ import { mode } from "@chakra-ui/theme-tools"
 const styles = {
     global: props => ({
         body: {
+            fontFamily: "Spline Sans Mono",
             bg: mode("#f0e7db", "#0b4a51")(props)
         }
     })
@@ -14,20 +15,20 @@ const components = {
         variants: {
             "section-title": {
                 textDecoration: "underline",
-                fontSize: 20,
+                fontSize: 24,
                 textUnderlineOffset: 6,
                 textDecorationColor: "#525252",
                 textDecorationThickness: 4,
                 marginTop: 3,
                 marginBottom: 4
             }
-        },
-        Link: {
-            baseStyle: props => ({
-                color: mode("#3d7aed", "#ff63c3")(props),
-                textUderlineOffset: 3
-            })
         }
+    },
+    Link: {
+        baseStyle: props => ({
+            color: mode("blue", "orange")(props),
+            textUnderlineOffset: 3
+        })
     }
 }
 

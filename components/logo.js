@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Text, useColorModeValue } from "@chakra-ui/react"
+import { Text, useColorModeValue, Box } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 
 const LogoBox = styled.span`
@@ -13,7 +13,7 @@ const LogoBox = styled.span`
     padding: 10px;
 
     &:hover img {
-        transfrom: rotate(30deg);
+        transform: rotate(180deg);
     }
 `
 

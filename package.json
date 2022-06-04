@@ -2,7 +2,7 @@
     "name": "marcos-homepage",
     "version": "1.0.0",
     "description": "Marcos WebSite",
-    "main": "index.js",
+    "main": "index.tsx",
     "scripts": {
         "test": "echo \"error: no test specified\" && exit 1",
         "dev": "next dev -H 0.0.0.0",
