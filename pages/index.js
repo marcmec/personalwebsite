@@ -21,7 +21,7 @@ const Page = () => {
 
             <Code
                 borderRadius="lg"
-                bg={useColorModeValue("blackAlpha.500", "whiteAlpha.200")}
+                bg={useColorModeValue("blackAlpha.100", "whiteAlpha.200")}
                 p={3}
                 mb={6}
                 align="center"
@@ -44,24 +44,15 @@ const Page = () => {
                     ml={{ md: 6 }}
                     textAlign="center"
                 >
-                    <Box
-                        borderColor="whiteAlpha.800"
-                        borderWidth={2}
-                        borderStyle="solid"
-                        w="100px"
-                        h="100px"
-                        display="inline-block"
-                        borderRadius="full"
-                        overflow="hidden"
-                    >
-                        <ProfileImage
-                            borderWidth="full"
-                            width="100%"
-                            height="100%"
-                            alt="profile image"
-                            src="/images/marc.png"
-                        />
-                    </Box>
+                    <ProfileImage
+                        borderWidth="full"
+                        width="100px"
+                        height="100px"
+                        alt="profile image"
+                        src="/images/marc.png"
+                        status={26}
+                    />
+                    {/* </Box> */}
                 </Box>
             </Box>
             <Section delay={0.1}>
