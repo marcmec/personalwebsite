@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react"
 import * as THREE from "three"
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import { loadGLTFModel } from "../libs/model"
-import { RoomContainer, RoomSpinner } from "./vox-room-loader"
+import { RoomSpinner, RoomContainer } from "./vox-room-loader"
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -112,7 +112,7 @@ const LoadRoom = () => {
                 renderer.dispose()
             }
         }
-    }, [])
+    })
 
     useEffect(() => {
         window.addEventListener("resize", handleWindowResize, false)

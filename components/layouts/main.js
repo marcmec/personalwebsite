@@ -3,6 +3,7 @@ import { Box, Container } from "@chakra-ui/react"
 import Navbar from "../navbar"
 import dynamic from "next/dynamic"
 import VoxeRoomLoader from "../vox-room-loader"
+import Footer from "../footer"
 const LazyLoopRoom = dynamic(() => import("../load-room"), {
     ssr: false,
     loading: () => <VoxeRoomLoader />
@@ -22,6 +23,7 @@ const Main = ({ children, router }) => {
             <Container maxW="container.md" pt={14}>
                 <LazyLoopRoom />
                 {children}
+                <Footer />
             </Container>
         </Box>
     )
