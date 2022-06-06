@@ -4,7 +4,7 @@ import Navbar from "../navbar"
 import dynamic from "next/dynamic"
 import VoxeRoomLoader from "../vox-room-loader"
 import Footer from "../footer"
-const LazyLoopRoom = dynamic(() => import("../load-room"), {
+const LazyLoopRoom = dynamic(() => import("../load-my-room"), {
     ssr: false,
     loading: () => <VoxeRoomLoader />
 })
