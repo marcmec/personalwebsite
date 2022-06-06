@@ -37,14 +37,12 @@ const LoadMyRoom = () => {
         renderer.outputEncoding = THREE.sRGBEncoding
         container.appendChild(renderer.domElement)
         setRenderer(renderer)
-        const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+        const ambientLight = new THREE.RectAreaLight(0xcccccc, 2)
         scene.add(ambientLight)
 
         const loader = new GLTFLoader()
 
         loader.load("/myroom.glb", function (gltf) {
-            // gltf.scene.position.y = 0
-            gltf.scene.position.x = 0
             ;(gltf.receiveShadow = false), (gltf.castShadow = false)
             scene.add(gltf.scene)
 
@@ -59,6 +57,8 @@ const LoadMyRoom = () => {
         renderer.setSize(container.clientWidth, container.clientHeight)
 
         const controls = new OrbitControls(camera, renderer.domElement)
+        controls.autoRotate = true
+
         controls.enableDamping = true
         controls.minDistance = 1
         controls.maxDistance = 10
@@ -67,10 +67,9 @@ const LoadMyRoom = () => {
         setControls(controls)
         const animate = () => {
             requestAnimationFrame(animate)
+            renderer.render(scene, camera)
 
             controls.update()
-
-            renderer.render(scene, camera)
         }
 
         // return () => {

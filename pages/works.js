@@ -60,7 +60,6 @@ const works = () => {
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
-
                 <Divider mt={4} mb={4} />
             </Container>
         </Layout>
