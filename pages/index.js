@@ -98,7 +98,6 @@ const Page = () => {
                         </NextLink>{" "}
                         {"}"}
                     </Paragraph>
-
                     <Box align="center" my={4}>
                         <NextLink href="/works/">
                             <Button

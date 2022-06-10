@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, Text } from "@chakra-ui/react"
+import { Box, Container, Heading, Image } from "@chakra-ui/react"
 import Layout from "../../components/layouts/article"
 
 const smzinho = () => {
@@ -9,7 +9,11 @@ const smzinho = () => {
                     Smzinho
                 </Heading>
                 <Box>
-                    <Image borderRadius={4} src="../images/smzinhoicon.webp" />
+                    <Image
+                        borderRadius={4}
+                        src="../images/smzinhoicon.webp"
+                        alt="smzinho"
+                    />
                 </Box>
             </Container>
         </Layout>

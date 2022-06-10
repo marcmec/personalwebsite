@@ -5,7 +5,7 @@ const options = {
     endOfLine: "lf",
     semi: false,
     tabWidth: 4,
-    trailingComma: "none",
-};
+    trailingComma: "none"
+}
 
-module.exports = options;
+module.exports = options

@@ -2,12 +2,18 @@
     "root": true,
     "extends": "next",
     "rules": {
+        "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
+
         "no-unused-vars": [
             "error",
             {
-                "argsIgnorePattern": "ˆ_",
-                "varsIgnorePattern": "ˆ_"
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
             }
-        ]
+        ],
+        "react-hooks/rules-of-hooks": 0, // Verifica as regras dos Hooks
+
+        "react/display-name": 0,
+        "react/jsx-key": "off"
     }
 }

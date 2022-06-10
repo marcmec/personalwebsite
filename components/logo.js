@@ -1,6 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-import { Text, useColorModeValue, Box } from "@chakra-ui/react"
+import { Text, useColorModeValue } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 
 const LogoBox = styled.span`
@@ -18,21 +17,10 @@ const LogoBox = styled.span`
 `
 
 const logo = () => {
-    const rocketPrint = `/images/programmer${useColorModeValue(
-        "",
-        "-dark"
-    )}.png`
-
     return (
         <Link href={"/"}>
             <a>
                 <LogoBox>
-                    {/* <Image
-                        src={rocketPrint}
-                        width={25}
-                        height={20}
-                        alt={"logo"}
-                    /> */}
                     <Text
                         color={useColorModeValue("gray.800", "whiteAlpha.900")}
                         fontFamily="'Spline Sans Mono'"

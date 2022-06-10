@@ -1,14 +1,6 @@
-import {
-    Container,
-    Heading,
-    SimpleGrid,
-    Divider,
-    Text,
-    Link
-} from "@chakra-ui/react"
+import { Container, Heading, SimpleGrid, Divider, Link } from "@chakra-ui/react"
 import NextLink from "next/link"
 import Section from "../components/section"
-import GridItem from "../components/grid-item"
 import { WorkGridItem } from "../components/grid-item"
 import smzinhoicon from "../public/images/smzinhoicon.webp"
 import pianogo from "../public/images/pianogo.png"
@@ -39,7 +31,7 @@ const works = () => {
                     </Section>
                     <Section delay={0.2}>
                         <WorkGridItem
-                            id={"smzinho"}
+                            id="smzinho"
                             title="Smzinho"
                             thumbnail={smzinhoicon}
                         >
