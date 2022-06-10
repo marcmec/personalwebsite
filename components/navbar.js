@@ -55,11 +55,14 @@ const Navbar = props => {
                 align="center"
                 justify="space-between"
             >
-                <Flex align="center" mr={5}>
+                <ThemeToggle />
+
+                <Flex align="center" ml={15}>
                     <Heading as="h1" size="lg" letterSpacing="tighter">
                         <Logo />
                     </Heading>
                 </Flex>
+
                 <Stack
                     direction={{ base: "column", md: "row" }}
                     display={{ base: "none", md: "flex" }}
@@ -71,11 +74,10 @@ const Navbar = props => {
                     <LinkItem href={"/works"} path={path}>
                         Works
                     </LinkItem>
-                    <LinkItem href={"/sociais"} path={path}>
+                    {/* <LinkItem href={"/sociais"} path={path}>
                         Sociais
-                    </LinkItem>
+                    </LinkItem> */}
                 </Stack>
-                <ThemeToggle />
 
                 <Box flex={1} align="right">
                     <Box ml={2} display={{ base: "inline-block", md: "none" }}>
@@ -93,9 +95,9 @@ const Navbar = props => {
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href="/sociais" passHref>
+                                {/* <NextLink href="/sociais" passHref>
                                     <MenuItem as={Link}>Sociais</MenuItem>
-                                </NextLink>
+                                </NextLink> */}
                             </MenuList>
                         </Menu>
                     </Box>

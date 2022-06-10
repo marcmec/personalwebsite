@@ -25,9 +25,9 @@ const logo = () => {
                         color={useColorModeValue("gray.800", "whiteAlpha.900")}
                         fontFamily="'Spline Sans Mono'"
                         fontWeight="bold"
-                        ml={3}
+                        ml={10}
                     >
-                        Marcos Vinícius
+                        Marc Dev
                     </Text>
                 </LogoBox>
             </a>
