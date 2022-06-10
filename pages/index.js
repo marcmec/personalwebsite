@@ -65,16 +65,16 @@ const Page = () => {
                         Descrição
                     </Heading>
                     <Paragraph>
-                        Marcos é um Desenvolvedor FullSatack com mais de 1 ano
+                        Marcos é um Desenvolvedor FullSatack com mais de 2 anos
                         de experiência. Engenheiro Mecatrônico e Mestrando
                         PPGI-UFAL -Informática. Atuo na solução de problemas com
-                        tecnologia. Já deesenvolveu Jogos 2D com UNITY-3D.
+                        tecnologia. Já desenvolveu Jogos 2D com UNITY-3D.
                         Entusiasta de novas tecnologias. Teve a primeira
                         experiência com desenvolvimento de software, quando
                         desenvovleu meu primeiro App Android, para um amigo,
                         chamado
                         <NextLink href="/works/smzinho/">
-                            <Link>Smzinho</Link>
+                            <Link p={2}>Smzinho</Link>
                         </NextLink>
                         &gt;1k downloads playStore, infelizmente descontinuado.
                         Atualmente trabalhando na
@@ -87,7 +87,7 @@ const Page = () => {
                                 Next Opinion
                             </Link>
                         </NextLink>
-                        como desenvolvedor de software, onde contribuo com os
+                        como desenvolvedor FrontEnd, onde contribuo com os
                         produtos {"{"}
                         <NextLink href="/works/apps/nexthome">
                             <Link> NextHome</Link>

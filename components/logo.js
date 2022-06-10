@@ -27,12 +27,12 @@ const logo = () => {
         <Link href={"/"}>
             <a>
                 <LogoBox>
-                    <Image
+                    {/* <Image
                         src={rocketPrint}
                         width={25}
                         height={20}
                         alt={"logo"}
-                    />
+                    /> */}
                     <Text
                         color={useColorModeValue("gray.800", "whiteAlpha.900")}
                         fontFamily="'Spline Sans Mono'"
