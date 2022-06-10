@@ -67,7 +67,7 @@ const Page = () => {
                     <Paragraph>
                         Marcos é um Desenvolvedor FullSatack com mais de 2 anos
                         de experiência. Engenheiro Mecatrônico e Mestrando
-                        PPGI-UFAL -Informática. Atuo na solução de problemas com
+                        PPGI-UFAL -Informática. Atua na solução de problemas com
                         tecnologia. Já desenvolveu Jogos 2D com UNITY-3D.
                         Entusiasta de novas tecnologias. Teve a primeira
                         experiência com desenvolvimento de software, quando
@@ -87,8 +87,8 @@ const Page = () => {
                                 Next Opinion
                             </Link>
                         </NextLink>
-                        como desenvolvedor FrontEnd, onde contribuo com os
-                        produtos {"{"}
+                        como desenvolvedor FrontEnd, onde contribui no
+                        desenvolvimento dos produtos {"{"}
                         <NextLink href="/works/apps/nexthome">
                             <Link> NextHome</Link>
                         </NextLink>{" "}
