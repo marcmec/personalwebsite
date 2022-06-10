@@ -6,7 +6,9 @@ import {
     Link,
     Button,
     Text,
-    Code
+    Code,
+    List,
+    ListItem
 } from "@chakra-ui/react"
 import NextLink from "next/link"
 import ProfileImage from "../components/profileimage"
@@ -16,29 +18,21 @@ import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioYear, BioSection } from "../components/bio"
+import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5"
 const Page = () => {
     return (
         <Layout>
             <Container>
-                <Code
-                    borderRadius="lg"
-                    bg={useColorModeValue("blackAlpha.100", "whiteAlpha.200")}
-                    p={3}
-                    mb={6}
-                    align="center"
-                >
-                    &gt;_ Salve, sou desenvolvedor full-stack, resolvo problemas
-                    através da tecnologia.
-                </Code>
-                <Box display={{ md: "flex" }}>
+                <Box display={{ md: "flex" }} mt={6}>
                     <Box flexGrow={1}>
                         <Heading as={"h2"} variant="page-title">
                             Marcos Vinícius
                         </Heading>
                         <Paragraph>
-                            Engenheiro de Software | Gamer | Cinéfilo
+                            Desenvolvedor de Software | Cientista de Dados |
+                            Gamer | Cinéfilo
                         </Paragraph>
-                    </Box>{" "}
+                    </Box>
                     <Box
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
@@ -53,37 +47,53 @@ const Page = () => {
                             src="/images/marc.png"
                             status={26}
                         />
-                        {/* </Box> */}
                     </Box>
                 </Box>
+                <Code
+                    borderRadius="lg"
+                    bg={useColorModeValue("blackAlpha.100", "whiteAlpha.200")}
+                    p={3}
+                    mb={6}
+                    mt={6}
+                    align="center"
+                >
+                    &gt;_ Salve, sou desenvolvedor full-stack, resolvo problemas
+                    através da tecnologia.
+                </Code>
                 <Section delay={0.1}>
                     <Heading as={"h3"} variant="section-title">
-                        Work
+                        Descrição
                     </Heading>
                     <Paragraph>
                         Marcos é um Desenvolvedor FullSatack com mais de 1 ano
                         de experiência. Engenheiro Mecatrônico e Mestrando
                         PPGI-UFAL -Informática. Atuo na solução de problemas com
-                        tecnologia. Já desenvolvi Jogos 2D com UNITY-3D.
-                        Entusiasta de novas tecnologias. Tive minha primeira
-                        experiência com desenvolvimento de aplicações, quando
-                        desenvolvi meu primeiro App Android, para um amigo,
-                        chamado{" "}
+                        tecnologia. Já deesenvolveu Jogos 2D com UNITY-3D.
+                        Entusiasta de novas tecnologias. Teve a primeira
+                        experiência com desenvolvimento de software, quando
+                        desenvovleu meu primeiro App Android, para um amigo,
+                        chamado
                         <NextLink href="/works/smzinho/">
                             <Link>Smzinho</Link>
-                        </NextLink>{" "}
+                        </NextLink>
                         &gt;1k downloads playStore, infelizmente descontinuado.
-                        Atualmente trabalhando na{" "}
-                        <NextLink href="/works/nextopinion/">
-                            <Link>Next Opinion</Link>
-                        </NextLink>{" "}
+                        Atualmente trabalhando na
+                        <NextLink href="/works/nextopinion">
+                            <Link
+                                p={2}
+                                href="https://www.nextopinion.com.pt"
+                                target="_blank"
+                            >
+                                Next Opinion
+                            </Link>
+                        </NextLink>
                         como desenvolvedor de software, onde contribuo com os
                         produtos {"{"}
-                        <NextLink href="/works/nextopinion/apps/nexthome">
+                        <NextLink href="/works/apps/nexthome">
                             <Link> NextHome</Link>
                         </NextLink>{" "}
                         &&
-                        <NextLink href="/works/nextopinion/apps/stepforma">
+                        <NextLink href="/works/stepforma">
                             <Link> Stepforma</Link>
                         </NextLink>{" "}
                         {"}"}
@@ -104,7 +114,7 @@ const Page = () => {
                 </Section>
                 <Section delay={0.2}>
                     <Heading as={"h3"} variant="section-title">
-                        My Way
+                        Até aqui
                     </Heading>
                     <BioSection>
                         <BioYear>1995</BioYear>
@@ -118,10 +128,10 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2018</BioYear>
-                        Publiquei meu primeiro App{" "}
+                        Publicação primeiro App
                         <NextLink href="/works/smzinho/">
-                            <Link>Smzinho</Link>
-                        </NextLink>{" "}
+                            <Link p={2}>Smzinho</Link>
+                        </NextLink>
                         &gt;1k downloads playStore.
                     </BioSection>
                     <BioSection>
@@ -130,9 +140,9 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2020</BioYear> até o momento. Desenvolvedor
-                        FullSatack na{" "}
+                        FullSatack na
                         <NextLink href="/works/nextopinion/">
-                            <Link>Next Opinion</Link>
+                            <Link p={2}>Next Opinion</Link>
                         </NextLink>
                     </BioSection>
                     <BioSection>
@@ -144,18 +154,61 @@ const Page = () => {
                 </Section>
                 <Section delay={0.3}>
                     <Heading as={"h3"} variant="section-title">
-                        know me
+                        Mais um pouco...
                     </Heading>
                     <Paragraph>
-                        Amante de pizza e café. Academia. Uma boa conversa.
-                        Filmes. Entusiasta de novas tecnologias.
+                        Amante de pizza e café. Música. Filmes. Academia.
+                        Futebol. Machine Learning. Desenho.
                     </Paragraph>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as={"h3"} variant="section-title">
-                        Sociais
+                        Veja mais
                     </Heading>
-                    <Paragraph>Sociais</Paragraph>
+                    <List>
+                        <ListItem>
+                            <Link
+                                href="https://github.com/marcmec"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoGithub />}
+                                >
+                                    @marcmec
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link
+                                href="https://instagram.com/bento.m.v.s"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoInstagram />}
+                                >
+                                    @bento.m.v.s
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link
+                                href="https://twitter.com/marcosdotpkg"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoTwitter />}
+                                >
+                                    @marcosdotpkg
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>

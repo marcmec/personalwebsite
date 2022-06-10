@@ -29,9 +29,9 @@ const LoadMyRoom = () => {
             alpha: true
         })
 
-        camera.aspect = container.clientWidth / container.clientHeight
+        // camera.aspect = container.clientWidth / container.clientHeight
         camera.updateProjectionMatrix()
-        camera.position.set(0, 100, 0)
+        camera.position.set(-100, 100, 100)
         renderer.setPixelRatio(window.devicePixelRatio)
         renderer.setSize(container.clientWidth, container.clientHeight)
         renderer.outputEncoding = THREE.sRGBEncoding
