@@ -29,8 +29,8 @@ const Page = () => {
                             Marcos Vinícius
                         </Heading>
                         <Paragraph>
-                            Desenvolvedor de Software | Cientista de Dados |
-                            Gamer | Cinéfilo
+                            Engenheiro de Software | Cientista de Dados | Gamer
+                            | Cinéfilo
                         </Paragraph>
                     </Box>
                     <Box
@@ -57,7 +57,7 @@ const Page = () => {
                     mt={6}
                     align="center"
                 >
-                    &gt;_ Salve, sou desenvolvedor full-stack, resolvo problemas
+                    &gt;_ Olá visitante, sou programador, resolvo problemas
                     através da tecnologia.
                 </Code>
                 <Section delay={0.1}>
@@ -65,9 +65,9 @@ const Page = () => {
                         Descrição
                     </Heading>
                     <Paragraph>
-                        Marcos é um Desenvolvedor FullSatack com mais de 2 anos
-                        de experiência. Engenheiro Mecatrônico e Mestrando
-                        PPGI-UFAL -Informática. Atua na solução de problemas com
+                        Marcos é um Programador com mais de 2 anos de
+                        experiência. Engenheiro Mecatrônico e Mestre em
+                        Informática. Atua na solução de problemas com
                         tecnologia. Já desenvolveu Jogos 2D com UNITY-3D.
                         Entusiasta de novas tecnologias. Teve a primeira
                         experiência com desenvolvimento de software, quando
@@ -146,10 +146,9 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
-                        Terminando o Mestrado em Informática pela Universidade
-                        Federal de Alagoas.
+                        Mestre em Informática pela Universidade Federal de
+                        Alagoas.
                     </BioSection>
-                    <BioSection>Continua...</BioSection>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as={"h3"} variant="section-title">
