@@ -89,7 +89,7 @@ const Page = () => {
                         </NextLink>
                         como desenvolvedor FrontEnd, no período entre Dezembro
                         de 2020 e Janeiro de 2023 no qual contribuí no
-                        desenvolvimento dos produtos {"{"}
+                        desenvolvimento dos produtos
                         <NextLink href="/works/apps/nexthome">
                             <Link> NextHome</Link>
                         </NextLink>{" "}
@@ -119,7 +119,7 @@ const Page = () => {
                     </Heading>
                     <BioSection>
                         <BioYear>1995</BioYear>
-                        Nascido e criado em Alagoas, Brasil.
+                        Nascido e criado em Maceió Alagoas, Brasil.
                     </BioSection>
 
                     <BioSection>
@@ -140,8 +140,7 @@ const Page = () => {
                         Graduado em engenharia Mecatrônica pela UNIT- AL.
                     </BioSection>
                     <BioSection>
-                        <BioYear>2020</BioYear> até o momento. Desenvolvedor
-                        FullSatack na
+                        <BioYear>2020</BioYear>Desenvolvedor FrontEnd na
                         <NextLink href="/works/nextopinion/">
                             <Link p={2}>Next Opinion</Link>
                         </NextLink>
