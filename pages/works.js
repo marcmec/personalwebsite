@@ -1,10 +1,9 @@
-import { Container, Heading, SimpleGrid, Divider, Link } from "@chakra-ui/react"
-import NextLink from "next/link"
-import Section from "../components/section"
+import { Container, Divider, Heading, Link, SimpleGrid } from "@chakra-ui/react"
 import { WorkGridItem } from "../components/grid-item"
-import smzinhoicon from "../public/images/smzinhoicon.webp"
-import pianogo from "../public/images/pianogo.png"
 import Layout from "../components/layouts/article"
+import Section from "../components/section"
+import pianogo from "../public/images/pianogo.png"
+import smzinhoicon from "../public/images/smzinhoicon.webp"
 
 const works = () => {
     return (
@@ -22,12 +21,10 @@ const works = () => {
                         >
                             Aplicativo de música mara a masterclass do professor
                             Waldenberg, disponível em:
-                            <NextLink
-                                href={"https://github.com/marcmec/Smzinho"}
-                            >
-                                <Link>PianoGo</Link>
-                            </NextLink>
                         </WorkGridItem>
+                        <Link href={"https://pianogo.app/"} target={"_blank"}>
+                            PianoGo
+                        </Link>
                     </Section>
                     <Section delay={0.2}>
                         <WorkGridItem
@@ -44,12 +41,13 @@ const works = () => {
                             a migração do Smzinho para a plataforma Twitch, o
                             app foi descontinuado. O código do meu primeiro app
                             encontra-se disponível em:
-                            <NextLink
-                                href={"https://github.com/marcmec/Smzinho"}
-                            >
-                                <Link>Código</Link>
-                            </NextLink>
                         </WorkGridItem>
+                        <Link
+                            href={"https://github.com/marcmec/Smzinho"}
+                            target={"_blank"}
+                        >
+                            Código
+                        </Link>
                     </Section>
                 </SimpleGrid>
                 <Divider mt={4} mb={4} />

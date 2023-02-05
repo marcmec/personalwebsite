@@ -73,12 +73,12 @@ const Page = () => {
                         experiência com desenvolvimento de software, quando
                         desenvovleu meu primeiro App Android, para um amigo,
                         chamado
-                        <NextLink href="/works/smzinho/">
+                        <NextLink href="/works">
                             <Link p={2}>Smzinho</Link>
                         </NextLink>
                         &gt;1k downloads playStore, infelizmente descontinuado.
                         Trabalhei na
-                        <NextLink href="/works/nextopinion">
+                        <NextLink href="/works/nextopinion" target={"_blank"}>
                             <Link
                                 p={2}
                                 href="https://www.nextopinion.com.pt"
@@ -90,13 +90,18 @@ const Page = () => {
                         como desenvolvedor FrontEnd, no período entre Dezembro
                         de 2020 e Janeiro de 2023 no qual contribuí no
                         desenvolvimento dos produtos
-                        <NextLink href="/works/apps/nexthome">
-                            <Link> NextHome</Link>
-                        </NextLink>{" "}
+                        <Link href="https://nexthome.pt/" target={"_blank"}>
+                            {" "}
+                            NextHome
+                        </Link>{" "}
                         &&
-                        <NextLink href="/works/stepforma">
-                            <Link> Stepforma</Link>
-                        </NextLink>{" "}
+                        <Link
+                            href="https://www.stepforma.com.br/"
+                            target={"_blank"}
+                        >
+                            {" "}
+                            Stepforma
+                        </Link>{" "}
                         com, JS,TS e como framework React e React Native, com
                         estilização a partir do antd/ant-design.
                     </Paragraph>
@@ -130,7 +135,7 @@ const Page = () => {
                     <BioSection>
                         <BioYear>2018</BioYear>
                         Publicação primeiro App
-                        <NextLink href="/works/smzinho/">
+                        <NextLink href="/works/">
                             <Link p={2}>Smzinho</Link>
                         </NextLink>
                         &gt;1k downloads playStore.
@@ -141,9 +146,15 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2020</BioYear>Desenvolvedor FrontEnd na
-                        <NextLink href="/works/nextopinion/">
-                            <Link p={2}>Next Opinion</Link>
-                        </NextLink>
+                        {/* <NextLink href="/works/nextopinion/"> */}
+                        <Link
+                            p={2}
+                            href="https://www.nextopinion.com.pt"
+                            target={"_blank"}
+                        >
+                            Next Opinion
+                        </Link>
+                        {/* </NextLink> */}
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
