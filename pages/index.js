@@ -1,24 +1,24 @@
 import {
-    Container,
     Box,
-    Heading,
-    useColorModeValue,
-    Link,
     Button,
-    Text,
     Code,
+    Container,
+    Heading,
+    Link,
     List,
-    ListItem
+    ListItem,
+    Text,
+    useColorModeValue
 } from "@chakra-ui/react"
 import NextLink from "next/link"
-import ProfileImage from "../components/profileimage"
 import Layout from "../components/layouts/article"
+import ProfileImage from "../components/profileimage"
 
-import Section from "../components/section"
-import Paragraph from "../components/paragraph"
 import { ChevronRightIcon } from "@chakra-ui/icons"
-import { BioYear, BioSection } from "../components/bio"
 import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5"
+import { BioSection, BioYear } from "../components/bio"
+import Paragraph from "../components/paragraph"
+import Section from "../components/section"
 const Page = () => {
     return (
         <Layout>
@@ -45,7 +45,7 @@ const Page = () => {
                             height="100px"
                             alt="profile image"
                             src="/images/marc.png"
-                            status={26}
+                            status={27}
                         />
                     </Box>
                 </Box>
@@ -77,7 +77,7 @@ const Page = () => {
                             <Link p={2}>Smzinho</Link>
                         </NextLink>
                         &gt;1k downloads playStore, infelizmente descontinuado.
-                        Atualmente trabalhando na
+                        Trabalhei na
                         <NextLink href="/works/nextopinion">
                             <Link
                                 p={2}
@@ -87,7 +87,8 @@ const Page = () => {
                                 Next Opinion
                             </Link>
                         </NextLink>
-                        como desenvolvedor FrontEnd, onde contribui no
+                        como desenvolvedor FrontEnd, no período entre Dezembro
+                        de 2020 e Janeiro de 2023 no qual contribuí no
                         desenvolvimento dos produtos {"{"}
                         <NextLink href="/works/apps/nexthome">
                             <Link> NextHome</Link>
@@ -96,7 +97,8 @@ const Page = () => {
                         <NextLink href="/works/stepforma">
                             <Link> Stepforma</Link>
                         </NextLink>{" "}
-                        {"}"}
+                        com, JS,TS e como framework React e React Native, com
+                        estilização a partir do antd/ant-design.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works/">
