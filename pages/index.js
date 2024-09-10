@@ -45,7 +45,7 @@ const Page = () => {
                             height="100px"
                             alt="profile image"
                             src="/images/marc.png"
-                            status={27}
+                            status={29}
                         />
                     </Box>
                 </Box>
