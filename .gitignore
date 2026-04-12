@@ -1,5 +1,3 @@
 node_modules
-.next
-dist
-.vercel
-.env
+.next/
+.claude/
