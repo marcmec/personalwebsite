@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react'
 import Scene from './Scene'
+import QuestLog from './QuestLog'
+import Skills from './Skills'
 
 type Mode = 'dev' | 'professor'
 
@@ -9,12 +11,11 @@ export default function Hero() {
   const isDev = mode === 'dev'
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 h-screen items-center">
       <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
         Marcos Vinícius
       </h1>
-
-      <div className="flex flex-row items-center gap-2">
+       <div className="flex flex-row items-center justify-center gap-2 w-full">
         <span className={isDev ? 'opacity-100' : 'opacity-40'}>dev</span>
 
         <button
@@ -32,13 +33,16 @@ export default function Hero() {
 
         <span className={!isDev ? 'opacity-100' : 'opacity-40'}>professor</span>
       </div>
-
+<div className='flex flex-row gap-2 items-start justify-center w-full'>
+     <QuestLog />
       {isDev ? (
-        <Scene modelPath='/sci-fi_computer.glb' className='w-full h-96' />
+        <Scene modelPath='/sci-fi_computer.glb' className='w-full h-128' />
       ) : (
-                <Scene modelPath='/basic_classroom.glb' className='w-full h-96' />
+                <Scene modelPath='/basic_classroom.glb' className='max-w-128 max-h-128' />
 
       )}
+      <Skills/>
+    </div>
     </div>
   )
 }
